@@ -1,0 +1,37 @@
+public class Aggregation {
+    
+    public static void main(String[] args) {
+        Employee employee1 = new Employee("Lucifer");
+        Employee employee2 = new Employee("Amendiel");
+        Employee employee3 = new Employee("Chloe");
+        Employee employee4 = new Employee("TriciaHelfer");
+        Employee employee5 = new Employee("Rick");
+        Employee employee6 = new Employee("Morty");
+        Employee employee7 = new Employee("PawnStars");
+        Employee employee8 = new Employee("Bojack");
+        
+        employee3.setSupervisor(employee1);
+        employee4.setSupervisor(employee1);
+        employee5.setSupervisor(employee1);
+        employee6.setSupervisor(employee2);
+        employee7.setSupervisor(employee2);
+        employee8.setSupervisor(employee2);
+        
+        employee1.print();
+        employee2.print();
+        employee3.print();
+        employee8.print();
+    }
+}
+ 
+/*
+Output:
+------ 
+Employee Lucifer's supervisor is:N.A.
+Employee Amendiel's subordinates are:
+- chloe,TriciaHelfer
+Employee Amendiel's supervisor is:N.A.
+Employee Amendiel's subordinates are:
+morty,PawnStars,Bojack
+
+*/
