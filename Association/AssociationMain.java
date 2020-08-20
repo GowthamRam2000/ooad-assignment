@@ -4,10 +4,10 @@ public class Association {
         Teacher teacher1 = new Teacher("Bhavadharani");
         Teacher teacher2 = new Teacher("LuciferV5FridayStar");
         
-        Student student1 = new Student("Nomura");
-        Student student2 = new Student("Aizawa");
-        Student student3 = new Student("Yoshikawa");
-        Student student4 = new Student("Uehara");
+        Student student1 = new Student("GowthamRam");
+        Student student2 = new Student("AnirudhSAS");
+        Student student3 = new Student("Kumar");
+        Student student4 = new Student("Ajay_Bj");
         
         teacher1.addStudent(student1);
         teacher1.addStudent(student2);
