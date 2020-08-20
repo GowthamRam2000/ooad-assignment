@@ -1,0 +1,17 @@
+public class Composition {
+ 
+    public static void main(String[] args) {
+        Car car1 = new Car("Peugeot 3008", new Engine(EngineType.PETROL));
+        Car car2 = new Car("BMW X5 Diesel", new Engine(EngineType.DIESEL));
+        
+        car1.print();
+        car2.print();
+    }
+}
+ 
+/*
+Output:
+------ 
+Tesla 3008 engine is PETROL
+Car BMW X5 Diesel engine is DIESEL
+*/
